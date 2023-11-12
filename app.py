@@ -208,7 +208,7 @@ def register():
             return redirect(url_for('register'))
         # password di enkripsi 
         # from warkzeug.security import ganerate_password_hash
-        data['password'] = generate_password_hash(request.form['password'])
+        data['password'] = generate_password_hash(request.form['password'], 'pbkdf2')
         data['username'] = username
 
         # simpan ke dalam collection users 
