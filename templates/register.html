@@ -1,0 +1,33 @@
+{% extends 'layout/base.html' %}
+{% set page_active = 'register' %}
+
+{% block _content %}
+<div class="row">
+    <div class="col-12">
+        <h1 class="display-5 mt-4">REgister</h1>
+    </div>
+    <div class="col-12">
+        <form action="" method="post">
+            <div class="mb-3">
+                <label for="nama_lengkap" class="form-label">nama_lengap</label>
+                <input type="text" class="form-control" id="nama_lengkap" name="nama_lengkausername" required>
+            </div>
+            <div class="mb-3">
+                <label for="username" class="form-label">username</label>
+                <input type="text" class="form-control" id="username" name="username" required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+            <div class="mb-3">
+                <label for="password_1" class="form-label">Konfirmasi Password</label>
+                <input type="password" class="form-control" id="password_1" name="password_1" required>
+            </div>
+            <div class="mb-3">
+                <button type="submit" class="btn btn-primary w-100">Regist</button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
